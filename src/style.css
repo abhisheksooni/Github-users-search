@@ -1,0 +1,11 @@
+
+
+
+.tab.current-tab{
+    background: #7d85f3a5;
+    border-radius: 5px;
+}
+.form.active{
+    scale: 1;
+    /* opacity: 1; */
+}

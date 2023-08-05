@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body class="">
+    <h1 class="text-8xl text-orange-500 text-center">Weather App</h1>
+    <main>
+        <div class=" flex">
+            <p class="tab" data-userWeather>your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+        <div class="weather-container">
+
+            <!-- grant location container -->
+            <div class="grant-location">
+                <p>grain location Acces</p>
+                <p>Allow Acces to get Weather</p>
+                <!-- <img src="./location img" alt=""> -->
+                <button class="btn border-2 border-black px-4" data-grantAccess> Grant Access</button>
+            </div>
+
+            <!-- seacrh form -->
+            <form class="form" data-searchForm>
+                <input type="text" placeholder="Search for city..." data-searchInput class="border-2 border-black px-4">
+                <button class="btn border-2 border-black px-4">Search</button>
+            </form>
+
+            <!-- Loading screen contener -->
+            <div class="loading-contener">
+                <!-- <img src="" alt=""> -->
+                <p>Loadind...</p>
+            </div>
+
+
+            <!-- show weather info -->
+
+            <div class="user-info-contener">
+                <!-- city anem and Flag -->
+                <div class="name">
+                    <p data-cityName></p>
+                    <!-- <p data-cityName></p> -->
+                </div>
+                <!-- weather descriptuion -->
+                <p data-weatherDesc></p>
+
+                <!-- <img src="" alt=""> -->
+                <!-- temprechar -->
+                <p data-temp></p>
+
+                <!-- 3 card - parameter -->
+                <div class="perameter-contener">
+                    <!-- card 1 -->
+                    <div class="perameter">
+                        <!-- <img src="" alt=""> -->
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="perameter">
+                        <!-- <img src="" alt=""> -->
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="perameter">
+                        <!-- <img src="" alt=""> -->
+                        <p>clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
