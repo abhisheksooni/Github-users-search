@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+</head>
+
+<body class=" md:flex justify-center items-center bg-slate-700 text-white h-screen">
+    <div class="px-5 md:w-[900px]">
+
+
+        <div class="flex justify-between px-2 py-4">
+            <h1>GitFinder</h1>
+            <button>LIGHT</button>
+        </div>
+
+        <!-- {/* search  */} -->
+        <div class=" flex text-[18px] bg-[#666] px-3 py-4 rounded-lg justify-between lg:text-xl">
+            <input type="text" placeholder="Search GitHub username..." class="px-2 py-2 bg-transparent " />
+            <button class="px-4 py-2 rounded-lg bg-blue-700  ">Search</button>
+        </div>
+
+        <!-- {/* user info */} -->
+        <div class=" flex flex-col md:flex-row p-4 text-xl bg-[#666] sm:text-2xl my-3 rounded-lg">
+            <!-- {/* inages and name data */} -->
+            <div class="flex  ">
+                <img src="https://avatars.githubusercontent.com/u/83975832?v=4"
+                    class="rounded-full w-24 border-2 sm:w-52" />
+                <!-- {/* user info */} -->
+                <div class="md:flex md:justify-between px-5 md:p-6 md:gap-36">
+                    <div class=" text-lg lg:text-4xl">
+                        <p class=" font-bold  ">NAME</p>
+                        <p class=" text-blue-500">username</p>
+                        <!-- moblie -->
+                        <p class="sm:hidden">Joined Date</p>
+                    </div>
+                    <!-- big scrine -->
+                    <p class=" hidden sm:inline">Joined Date pm</p>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class=" flex justify-center gap-6 p-3 md:gap-14">
+                <div class="text-center">
+                    <p>Repos</p>
+                    <p>0</p>
+                </div>
+                <div class="text-center">
+                    <p>Followers</p>
+                    <p>0</p>
+                </div>
+                <div class="text-center">
+                    <p>Following</p>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <!-- links -->
+            <div class="flex flex-auto"></div>
+        </div>
+   
+    </div>
+
+
+</body>
+
+</html>
